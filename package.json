@@ -1,0 +1,11 @@
+{
+  "name": "micro-task-manager",
+  "version": "1.0.0",
+  "description": "micro-task-manager api",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm --prefix task run lint && npm --prefix user run lint && npm --prefix token run lint && npm --prefix gateway run lint && npm --prefix mailer run lint && npm --prefix permission run lint"
+  },
+  "author": "Washington Trucido",
+  "license": "ISC"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "task",
+  "version": "0.0.1",
+  "description": "micro-task-manager task",
+  "author": "Washington Trucido",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node -r dotenv/config dist/main.js dotenv_config_path=../.env\"",
+    "start:test": "tsc-watch -p tsconfig.build.json --onSuccess \"node -r dotenv/config dist/main.js dotenv_config_path=../.env.test\"",
+    "start:prod": "node dist/main.js",
+    "lint": "eslint \"src/**/*.ts\" --fix"
+  },
+  "dependencies": {
+    "@nestjs/common": "10.4.15",
+    "@nestjs/core": "10.4.15",
+    "@nestjs/mapped-types": "^2.0.6",
+    "@nestjs/microservices": "10.4.15",
+    "@nestjs/mongoose": "10.1.0",
+    "@nestjs/platform-express": "10.4.15",
+    "mongoose": "8.8.4",
+    "reflect-metadata": "0.2.2",
+    "rimraf": "6.0.1",
+    "rxjs": "7.8.1"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.0",
+    "@types/node": "22.10.1",
+    "@typescript-eslint/eslint-plugin": "8.18.0",
+    "@typescript-eslint/parser": "8.18.0",
+    "dotenv": "16.4.7",
+    "eslint": "9.16.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "3.4.2",
+    "ts-node": "10.9.2",
+    "tsc-watch": "6.2.1",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.7.2"
+  }
+}
