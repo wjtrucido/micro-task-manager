@@ -27,6 +27,7 @@ export const UserSchema = new mongoose.Schema<IUserSchema>(
       ],
     },
     is_confirmed: {
+      default: true,
       type: Boolean,
       required: [true, 'Confirmed can not be empty'],
     },

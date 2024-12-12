@@ -7,7 +7,11 @@ Para un desarrollo en producción usaría una base de datos para cada microservi
 
 ## Construir y ejecutar la aplicación con docker-compose
 
-En la raíz del directorio ejecutar docker-compose up.
+1- Renombrar el archivo ".env.example" a ".env"
+
+2- Abrir la consola de comandos en la raíz del proyecto.
+
+3- Ejecutar el comando docker-compose up
 
 ## Soporte
 
